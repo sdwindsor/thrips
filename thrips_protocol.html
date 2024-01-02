@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+	body {
+	    font-family: sans-serif; /* Change font to sans-serif */
+        }
+        table {
+            border-collapse: collapse;
+	    font-family: sans-serif;
+        }
+
+        td {
+            height: 30px;
+            background-color: yellow;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .bordered {
+            border: 1px solid black;
+            width: 30px; /* Set width for normal cells */
+        }
+
+        .merged {
+            background-color: yellow;
+            border: none;
+        }
+
+        .bottom-text {
+            color: #008000;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg); /* Rotate text for the leftmost column */
+            color: #008000;
+            font-weight: bold;
+            font-size: 16px;
+            width: 30px; /* Set width for vertical text cells */
+            line-height: 30px;
+	    white-space: nowrap;
+	    overflow: hidden;
+        }
+
+        .right-vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(0deg); /* Rotate text for the rightmost column */
+            color: #008000;
+            font-weight: bold;
+            font-size: 16px;
+            width: 30px; /* Set width for vertical text cells */
+            line-height: 30px;
+	    white-space: nowrap;
+	    overflow: hidden;
+        }
+
+        .title {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .result-text {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Thrips protocol random sample calculator</h1>
+    </div>
+Instructions: 
+<ol>
+    <li>Click "Randomize"</li>
+    <li>Note down the numbers generated on the data sheet.</li>
+    <li>Record the number of thrips (not including phlaeothripidae or aeolothripidae) for each square on the recording sheet.</li>
+    <li>Total all thrips found and multiply by 9.</li>
+    <li>Add any thrips found on the edges of the sticky trap outside of the grid to the total.</li>
+    <li>Record the total number in the "other" section of the recording sheet.</li>
+</ol>
+If you're not sure a thrip fits in one cell or the other, go by whichever cell its eyes are in. If its eyes are outside of a cell, count it as off the grid.
+<br>
+<br>
+    <table>
+        <!-- Top row -->
+        <tr>
+            <td rowspan="9" class="vertical-text">PHEROCON AM or AM NO BAIT TRAP</td>
+	    <td colspan="9" class="bottom-text"><i>△TRÉCÉ △TRÉCÉ △TRÉCÉ △TRÉCÉ △TRÉCÉ △TRÉCÉ</i></td>
+            <td rowspan="9" class="right-vertical-text">PHEROCON AM or AM NO BAIT TRAP</td>
+        </tr>
+
+        <!-- Middle rows -->
+        <!-- Row 1 -->
+        <tr>
+            <td class="bordered" id="cell1">1</td>
+            <td class="bordered" id="cell2">2</td>
+            <td class="bordered" id="cell3">3</td>
+            <td class="bordered" id="cell4">4</td>
+            <td class="bordered" id="cell5">5</td>
+            <td class="bordered" id="cell6">6</td>
+            <td class="bordered" id="cell7">7</td>
+            <td class="bordered" id="cell8">8</td>
+            <td class="bordered" id="cell9">9</td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td class="bordered" id="cell10">10</td>
+            <td class="bordered" id="cell11">11</td>
+            <td class="bordered" id="cell12">12</td>
+            <td class="bordered" id="cell13">13</td>
+            <td class="bordered" id="cell14">14</td>
+            <td class="bordered" id="cell15">15</td>
+            <td class="bordered" id="cell16">16</td>
+            <td class="bordered" id="cell17">17</td>
+            <td class="bordered" id="cell18">18</td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td class="bordered" id="cell19">19</td>
+            <td class="bordered" id="cell20">20</td>
+            <td class="bordered" id="cell21">21</td>
+            <td class="bordered" id="cell22">22</td>
+            <td class="bordered" id="cell23">23</td>
+            <td class="bordered" id="cell24">24</td>
+            <td class="bordered" id="cell25">25</td>
+            <td class="bordered" id="cell26">26</td>
+            <td class="bordered" id="cell27">27</td>
+        </tr>
+        <!-- Row 4 -->
+        <tr>
+            <td class="bordered" id="cell28">28</td>
+            <td class="bordered" id="cell29">29</td>
+            <td class="bordered" id="cell30">30</td>
+            <td class="bordered" id="cell31">31</td>
+            <td class="bordered" id="cell32">32</td>
+            <td class="bordered" id="cell33">33</td>
+            <td class="bordered" id="cell34">34</td>
+            <td class="bordered" id="cell35">35</td>
+            <td class="bordered" id="cell36">36</td>
+        </tr>
+        <!-- Row 5 -->
+        <tr>
+            <td class="bordered" id="cell37">37</td>
+            <td class="bordered" id="cell38">38</td>
+            <td class="bordered" id="cell39">39</td>
+            <td class="bordered" id="cell40">40</td>
+            <td class="bordered" id="cell41">41</td>
+            <td class="bordered" id="cell42">42</td>
+            <td class="bordered" id="cell43">43</td>
+            <td class="bordered" id="cell44">44</td>
+            <td class="bordered" id="cell45">45</td>
+        </tr>
+        <!-- Row 6 -->
+        <tr>
+            <td class="bordered" id="cell46">46</td>
+            <td class="bordered" id="cell47">47</td>
+            <td class="bordered" id="cell48">48</td>
+            <td class="bordered" id="cell49">49</td>
+            <td class="bordered" id="cell50">50</td>
+            <td class="bordered" id="cell51">51</td>
+            <td class="bordered" id="cell52">52</td>
+            <td class="bordered" id="cell53">53</td>
+            <td class="bordered" id="cell54">54</td>
+        </tr>
+        <!-- Row 7 -->
+        <tr>
+            <td class="bordered" id="cell55">55</td>
+            <td class="bordered" id="cell56">56</td>
+            <td class="bordered" id="cell57">57</td>
+            <td class="bordered" id="cell58">58</td>
+            <td class="bordered" id="cell59">59</td>
+            <td class="bordered" id="cell60">60</td>
+            <td class="bordered" id="cell61">61</td>
+            <td class="bordered" id="cell62">62</td>
+            <td class="bordered" id="cell63">63</td>
+        </tr>
+
+        <!-- Bottom row -->
+        <tr>
+            <td colspan="9" class="merged bottom-text">TRÉCÉ www.trece.com TRÉCÉ www.trece.com</td>
+        </tr>
+    </table>
+    </br>
+    <button onclick="generateRandom()">Randomize</button>
+
+    <div id="result" class="result-text"></div>
+
+<script>
+    function generateRandom() {
+        let randomNumbers = new Set();
+        let rangeStart = 1;
+
+        // Generate 1 unique number from each of the 7 ranges
+        while (randomNumbers.size < 7) {
+            let rangeEnd = rangeStart + 8;
+            let randomNumber;
+
+            do {
+                randomNumber = Math.floor(Math.random() * (rangeEnd - rangeStart + 1)) + rangeStart;
+            } while (Array.from(randomNumbers).some(num => num % 9 === randomNumber % 9));
+
+            randomNumbers.add(randomNumber);
+            rangeStart += 9;
+        }
+
+        // Convert set to array and sort numbers
+        let sortedNumbers = Array.from(randomNumbers).sort((a, b) => a - b);
+
+        // Reset all cells to yellow
+        for (let i = 1; i <= 63; i++) {
+            document.getElementById('cell' + i).style.backgroundColor = 'yellow';
+        }
+
+        // Change the background of selected cells to red
+        sortedNumbers.forEach(number => {
+            document.getElementById('cell' + number).style.backgroundColor = 'red';
+        });
+
+        // Display generated numbers
+        document.getElementById('result').innerText = 'Numbers generated: ' + sortedNumbers.join(', ');
+    }
+</script>
+<!--
+    <script>
+        function generateRandom() {
+            let randomNumbers = new Set();
+            // Generate 7 unique random numbers
+            while (randomNumbers.size < 7) {
+                randomNumbers.add(Math.floor(Math.random() * 63) + 1);
+            }
+
+            // Convert set to array and sort numbers
+            let sortedNumbers = Array.from(randomNumbers).sort((a, b) => a - b);
+
+            // Reset all cells to yellow
+            for (let i = 1; i <= 63; i++) {
+                document.getElementById('cell' + i).style.backgroundColor = 'yellow';
+            }
+
+            // Change the background of selected cells to red
+            sortedNumbers.forEach(number => {
+                document.getElementById('cell' + number).style.backgroundColor = 'red';
+            });
+
+            // Display generated numbers
+            document.getElementById('result').innerText = 'Numbers generated: ' + sortedNumbers.join(', ');
+        }
+    </script>
+//-->
+<br>
+
+</body>
+</html>
